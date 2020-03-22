@@ -6,7 +6,7 @@
     @include position(fixed, $bottom: 10px, $right: 10px);
     display: inline-block;
     z-index: 9;
-    @include size(40px);
+    @include size(65px, 40px);
     @include font($size: 11px, $weight: 400);
     color: $color-white;
     text-align: center;
