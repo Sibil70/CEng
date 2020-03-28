@@ -334,7 +334,11 @@ h4 {
 ------------------------------------------------------------------*/
 .service {
   background: #fff;
-  padding: 50px; }
+  padding: 50px;
+  min-height: -webkit-fit-content;
+  min-height: -moz-fit-content;
+  min-height: fit-content;
+  min-height: auto; }
   .service .service-element,
   .service .service-info {
     -webkit-transform: translate3d(0, 0, 0);
