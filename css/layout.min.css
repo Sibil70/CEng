@@ -112,6 +112,16 @@ h6 {
     h5 > a:focus,
     h6 > a:focus {
       text-decoration: none; }
+  @media (max-width: 767px) {
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+      /* word wrap */
+      font-size: 18px;
+      word-wrap: break-word; } }
 
 h1 {
   font-size: 40px; }
@@ -121,6 +131,11 @@ h2 {
 
 h3 {
   font-size: 22px; }
+  @media (max-width: 767px) {
+    h3 {
+      /* word wrap */
+      font-size: 18px;
+      word-wrap: break-word; } }
 
 h4 {
   font-size: 22px; }
@@ -1014,6 +1029,11 @@ h4 {
 /*------------------------------------------------------------------
     [Swiper Slider]
 ------------------------------------------------------------------*/
+.swiper-wrapper {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center; }
+
 .swiper-slider {
   position: relative;
   width: 100%;
@@ -1033,14 +1053,6 @@ h4 {
   transition-property: all;
   -webkit-transition-timing-function: cubic-bezier(0.7, 1, 0.7, 1);
           transition-timing-function: cubic-bezier(0.7, 1, 0.7, 1); }
-  .swiper-clients-img:hover {
-    opacity: .8;
-    -webkit-transition-duration: 200ms;
-            transition-duration: 200ms;
-    -webkit-transition-property: all;
-    transition-property: all;
-    -webkit-transition-timing-function: cubic-bezier(0.7, 1, 0.7, 1);
-            transition-timing-function: cubic-bezier(0.7, 1, 0.7, 1); }
 
 /*------------------------------------------------------------------
   	[Text Colors]

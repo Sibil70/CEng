@@ -1,6 +1,9 @@
 /*------------------------------------------------------------------
     [Swiper Slider]
 ------------------------------------------------------------------*/
+.swiper-wrapper {
+	align-items: center;
+}
 
 .swiper-slider {
 	@include position(relative);
@@ -15,9 +18,4 @@
 	opacity: 1;
 	cursor: pointer;
 	@include cubic-transition($delay: 0, $duration: 200ms, $property: (all));
-
-	&:hover {
-		opacity: .8;
-		@include cubic-transition($delay: 0, $duration: 200ms, $property: (all));
-	}
 }
