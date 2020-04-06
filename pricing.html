@@ -531,15 +531,19 @@
                         <!-- SEPARATOR -->
                     </div>
                     <div class="col-sm-5 sm-margin-b-30">
-                        <h2 class="color-white">Свяжитесь с нами</h2>
-                        <input type="text" class="form-control footer-input margin-b-20" placeholder="Ваше имя"
-                            required>
-                        <input type="email" class="form-control footer-input margin-b-20" placeholder="Email" required>
-                        <input type="text" class="form-control footer-input margin-b-20"
-                            placeholder="Контактный телефон" required>
-                        <textarea class="form-control footer-input margin-b-30" rows="6" placeholder="Сообщение"
-                            required></textarea>
-                        <button type="submit" class="btn-theme btn-theme-sm btn-base-bg text-uppercase">Submit</button>
+                        <form action="./mail.php" method="POST" id="mail">
+                            <h2 class="color-white">Свяжитесь с нами</h2>
+                            <input type="text" name="first_name" class="form-control footer-input margin-b-20"
+                                placeholder="Ваше имя" required>
+                            <input type="email" name="email" class="form-control footer-input margin-b-20"
+                                placeholder="Email" required>
+                            <input type="text" name="phone" class="form-control footer-input margin-b-20"
+                                placeholder="Контактный телефон" required>
+                            <textarea class="form-control footer-input margin-b-30" name="message" rows="6"
+                                placeholder="Сообщение" required></textarea>
+                            <button type="submit" name="submit"
+                                class="btn-theme btn-theme-sm btn-base-bg text-uppercase">Submit</button>
+                        </form>
                     </div>
                 </div>
                 <!--// end row -->

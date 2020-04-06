@@ -120,9 +120,10 @@
                     <div class="carousel-centered">
                         <div class="margin-b-40">
                             <h1 class="carousel-title">CONSTRUCTION<br /> ENGINEERING</h1>
-                            <p>Инженерные изыскания <br />Проектирование</p> 
+                            <p>Инженерные изыскания <br />Проектирование</p>
                         </div>
-                        <a href="#scrolltarget" class="btn-theme btn-theme-sm btn-white-brd text-uppercase js-read-more">УЗНАТЬ БОЛЬШЕ</a>
+                        <a href="#scrolltarget"
+                            class="btn-theme btn-theme-sm btn-white-brd text-uppercase js-read-more">УЗНАТЬ БОЛЬШЕ</a>
                     </div>
                 </div>
             </div>
@@ -137,7 +138,8 @@
                                 <br /> Независимая экспертиза
                             </p>
                         </div>
-                        <a href="#scrolltarget" class="btn-theme btn-theme-sm btn-white-brd text-uppercase js-read-more">УЗНАТЬ БОЛЬШЕ</a>
+                        <a href="#scrolltarget"
+                            class="btn-theme btn-theme-sm btn-white-brd text-uppercase js-read-more">УЗНАТЬ БОЛЬШЕ</a>
                     </div>
                 </div>
             </div>
@@ -470,9 +472,11 @@
                     <div class="ver-center-aligned">
                         <div class="promo-section-col">
                             <h2>НАША КОМАНДА</h2>
-                            <p>Наша команда — это высококвалифицированные специалисты в области инженерных изысканий, геотехнического мониторинга и проектирования.</p>
-                            <p>Мы отлично понимаем, что наша репутация строится из положительных отзывов наших заказчиков и что единственная возможность добиться таких результатов —
-                            высокопрофессионально выполнять свою работу.</p>
+                            <p>Наша команда — это высококвалифицированные специалисты в области инженерных изысканий,
+                                геотехнического мониторинга и проектирования.</p>
+                            <p>Мы отлично понимаем, что наша репутация строится из положительных отзывов наших
+                                заказчиков и что единственная возможность добиться таких результатов —
+                                высокопрофессионально выполнять свою работу.</p>
                         </div>
                     </div>
                 </div>
@@ -530,15 +534,19 @@
                         <!-- SEPARATOR -->
                     </div>
                     <div class="col-sm-5 sm-margin-b-30">
-                        <h2 class="color-white">Свяжитесь с нами</h2>
-                        <input type="text" class="form-control footer-input margin-b-20" placeholder="Ваше имя"
-                            required>
-                        <input type="email" class="form-control footer-input margin-b-20" placeholder="Email" required>
-                        <input type="text" class="form-control footer-input margin-b-20"
-                            placeholder="Контактный телефон" required>
-                        <textarea class="form-control footer-input margin-b-30" rows="6" placeholder="Сообщение"
-                            required></textarea>
-                        <button type="submit" class="btn-theme btn-theme-sm btn-base-bg text-uppercase">Submit</button>
+                        <form action="./mail.php" method="POST" id="mail">
+                            <h2 class="color-white">Свяжитесь с нами</h2>
+                            <input type="text" name="first_name" class="form-control footer-input margin-b-20"
+                                placeholder="Ваше имя" required>
+                            <input type="email" name="email" class="form-control footer-input margin-b-20"
+                                placeholder="Email" required>
+                            <input type="text" name="phone" class="form-control footer-input margin-b-20"
+                                placeholder="Контактный телефон" required>
+                            <textarea class="form-control footer-input margin-b-30" name="message" rows="6"
+                                placeholder="Сообщение" required></textarea>
+                            <button type="submit" name="submit"
+                                class="btn-theme btn-theme-sm btn-base-bg text-uppercase">Submit</button>
+                        </form>
                     </div>
                 </div>
                 <!--// end row -->
