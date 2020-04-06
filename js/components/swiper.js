@@ -35,4 +35,11 @@ $(window).load(function(){
         slidesPerView: 1,
         loop: true,
     });
+    // Swiper Works
+    var swiper = new Swiper('.swiper-works', {
+        speed: 1000,
+        autoplay: 3000,
+        slidesPerView: 1,
+        loop: true,
+    });
 });
