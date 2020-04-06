@@ -19,3 +19,11 @@
 	cursor: pointer;
 	@include cubic-transition($delay: 0, $duration: 200ms, $property: (all));
 }
+.swiper-slide {
+	overflow: hidden;
+	img{
+		display: block;
+		width: 100%;
+		height: 100%;
+	};
+}
