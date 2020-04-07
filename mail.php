@@ -1,5 +1,5 @@
 <?php
-$recipients = array("sans87@inbox.ru");
+$recipients = array("sans87@inbox.ru, i@str-ing.pro");
 
 if (isset($_POST['submit'])) {
     $to = implode(',', $recipients);
